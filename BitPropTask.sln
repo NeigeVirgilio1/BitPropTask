@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BitPropTask", "BitPropTask.pyproj", "{D292CBB7-1B29-441E-BFA2-E074B2DCEE36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".html", ".html", "{C7D4A7A3-516E-4F98-8732-2C1D631AE0E7}"
+	ProjectSection(SolutionItems) = preProject
+		agent_dashboard.html = agent_dashboard.html
+		agent_login.html = agent_login.html
+		index.html = index.html
+		property.html = property.html
+		tenant_login.html = tenant_login.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".css", ".css", "{D0C2AD75-DA42-4C4E-BA1A-0E2D61D5106D}"
+	ProjectSection(SolutionItems) = preProject
+		style.css = style.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D292CBB7-1B29-441E-BFA2-E074B2DCEE36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D292CBB7-1B29-441E-BFA2-E074B2DCEE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAE84684-A96E-4B00-928A-CD0FBC7F6D05}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Properties</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Available Properties</h1>
+    <ul>
+        {% for property in properties %}
+        <li>
+            <h2>
+                <a href="{{ url_for('property_details', property_id=property.id) }}">
+                    {{ property.address }}
+                </a>
+            </h2>
+            <p>{{ property.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('tenant_login') }}">Login as Tenant</a>
+    <a href="{{ url_for('agent_login') }}">Login as Agent</a>
+</body>
+</html>

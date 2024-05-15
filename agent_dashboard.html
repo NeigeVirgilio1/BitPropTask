@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Agent Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome, Agent {{ agent.username }}!</h1>
+
+    <h2>Interested Tenants:</h2>
+    <ul>
+        {% for tenant in interested_tenants %}
+        <li>
+            <p>Name: {{ tenant.tenant_name }}</p>
+            <p>Email: {{ tenant.tenant_email }}</p>
+            <p>Property: {{ tenant.property.address }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html> #created a simple dashboard for agents to see tenant interest's in HTML'

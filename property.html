@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ property.address }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{{ property.address }}</h1>
+    <p>{{ property.description }}</p>
+    <p>Bedrooms: {{ property.bedrooms }}, Bathrooms: {{ property.bathrooms }}</p>
+    <p>Price: ${{ property.price }}</p>
+
+    {% if weather %}
+    <p>Current temperature: {{ weather }} Kelvin</p>
+    {% endif %}
+
+    <h2>Register Your Interest:</h2>
+    <form method="POST" action="{{ url_for('register_interest', property_id=property.id) }}">
+        <label for="tenant_name">Your Name:</label>
+        <input type="text" name="tenant_name" id="tenant_name" required><br><br>
+
+        <label for="tenant_email">Your Email:</label>
+        <input type="email" name="tenant_email" id="tenant_email" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Properties</a>
+</body>
+</html>
